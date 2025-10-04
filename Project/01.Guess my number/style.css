@@ -1,0 +1,179 @@
+/* 🎯 GUESS MY NUMBER */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f5f7;
+  color: #2e2e2e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADER*/
+
+header {
+  text-align: center;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 80rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+}
+
+.between {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #64748b;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.again:hover {
+  background-color: #1e40af;
+}
+
+/* NUMBER BOX */
+
+.number {
+  margin: 3rem auto 0;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 6rem;
+  width: 14rem;
+  padding: 2rem 0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* MAIN SECTION */
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 90rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*INPUT & BUTTONS */
+
+.guess {
+  width: 18rem;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.guess:focus {
+  border-color: #2563eb;
+}
+
+.btn {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1rem 2.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* MESSAGE & SCORE SECTION*/
+
+.message {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.8rem;
+  color: #475569;
+}
+
+.score,
+.highscore {
+  color: #2563eb;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+/* RESPONSIVE DESIGN*/
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .number {
+    font-size: 5rem;
+    width: 12rem;
+  }
+
+  .guess {
+    font-size: 2.4rem;
+  }
+}
