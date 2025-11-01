@@ -1,0 +1,38 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #b0f3f1, #a1c4fd);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Main title */
+h1 {
+  font-size: 2.5em;
+  color: #0b3d91;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle / date */
+h2 {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Optional subtle shadow for better readability */
+h1, h2 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
